@@ -1,0 +1,30 @@
+{
+  "name": "Magic-Mirror-Module-Pins",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ptrbld/MMM-Pins"
+  },
+  "keywords": [
+    "magic mirror",
+    "Pins",
+    "module"
+  ],
+  "author": "PtrBld",
+  "contributors": "https://github.com/prtbld/MMM-Pins/graphs/contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ptrbld/MMM-Pins/issues"
+  },
+  "homepage": "https://github.com/ptrbld/MMM-Pins#readme",
+  "scripts": {
+    "postinstall": "node_modules/.bin/electron-rebuild -e ../../node_modules/electron"
+  },
+  "dependencies": {
+    "onoff": "latest"
+    },
+	"devDependencies": {
+    "electron-rebuild": "^1.2.1"
+  }
+}
