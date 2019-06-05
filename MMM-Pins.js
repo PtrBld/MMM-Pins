@@ -9,7 +9,7 @@
 Module.register('MMM-Pins',{	
 	requiresVersion: "2.1.0",
 	defaults: {
-		pinConfiguration: [{pin:5, direction:"out", notification:"TEST", prettyName: "Test"}]		
+		pinConfiguration: []		
 	},	
 	
 	// Override notification handler.
@@ -25,12 +25,13 @@ Module.register('MMM-Pins',{
 		Log.info('Starting module: ' + this.name);
 		let payload = {
 		  module: this.name, 
-		  path: "modulename", 
+		  path: "pins", 
 		  actions: {}
 		};
 		for (pinConfig in this.pinConfiguration) {
-			payload.actions[pinConfig.notification] = {method: "GET", notification: pinConfig.notification, prettyName: (pinConfig.prettyName || pinConfig.notification)};
+			payload.actions[pinConfig.notification] = {notification: pinConfig.notification, prettyName: (pinConfig.prettyName || pinConfig.notification)};
 		}
+		Log.log(payload);
 		this.sendNotification("REGISTER_API", payload);
 	}
 });
