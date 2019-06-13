@@ -15,24 +15,25 @@ Module.register('MMM-Pins',{
 	// Override notification handler.
 	notificationReceived: function(notification, payload) {
 		if(notification === "ALL_MODULES_STARTED"){
-                	let payload = {
-                  	module: this.name,
-                 	path: "pins",
-                  	actions: {}
-               		};
-               		for (let index = 0; index < this.config.pinConfiguration.length; ++index) {
+			this.sendSocketNotification('PIN_CONFIG', this.config.pinConfiguration)
+			let payload = {
+				module: this.name,
+				path: "pins",
+				actions: {}
+			};
+			for (let index = 0; index < this.config.pinConfiguration.length; ++index) {
 				let pinConfig = this.config.pinConfiguration[index];
-                        	payload.actions[pinConfig.notification] = {notification: pinConfig.notification, prettyName: pinConfig.prettyName};
-                	}
-                	Log.log(payload.module);
+				payload.actions[pinConfig.notification] = {notification: pinConfig.notification, prettyName: pinConfig.prettyName};
+			}
+			Log.log(payload.module);
 			Log.log(payload.actions.toString());
-                	this.sendNotification("REGISTER_API", payload);
+			this.sendNotification("REGISTER_API", payload);
 			return;
 		}
 		for (let index = 0; index < this.config.pinConfiguration.length; ++index) {
                         let pinConfig = this.config.pinConfiguration[index];
 			if(pinConfig.notification === notification){
-				this.sendSocketNotification("TOGGLE_PIN", {pin:pinConfig.pin, direction:pinConfig.direction});
+				this.sendSocketNotification("TOGGLE_PIN", pinConfig.pin);
 				break;
 			}
 		}
