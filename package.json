@@ -23,8 +23,8 @@
   },
   "dependencies": {
     "onoff": "latest"
-    },
-	"devDependencies": {
+  },
+  "devDependencies": {
     "electron-rebuild": "^1.2.1"
   }
 }
