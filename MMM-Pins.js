@@ -34,6 +34,9 @@ Module.register('MMM-Pins',{
                         let pinConfig = this.config.pinConfiguration[index];
 			if(pinConfig.notification === notification){
 				this.sendSocketNotification("TOGGLE_PIN", pinConfig.pin);
+				if(pinConfig.sound){
+					this.sendNotification('PLAY_SOUND', pinConfig.sound);
+				}
 				break;
 			}
 		}
