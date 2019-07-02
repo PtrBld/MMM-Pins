@@ -1,10 +1,9 @@
 # MMM-Pins
 This is an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It can toggle pins specified in the config.
 
-You can specify any number of pins with different trigger messages. All messages will be registered with the [MMM-Remote Module](https://github.com/Jopyth/MMM-Remote-Control) automatically. It can also play sounds using [MMM-Sounds](https://github.com/jc21/MMM-Sounds) module when a pin is toggled.
+You can specify any number of pins with different trigger messages. All messages will be registered with the [MMM-Remote Module](https://github.com/Jopyth/MMM-Remote-Control) automatically to trigger the messages from the remote control web app but can be triggered from any other module, as well. It can also play sounds using [MMM-Sounds](https://github.com/jc21/MMM-Sounds) module when a pin is toggled.
 
-Therefore we need to have [MMM-Remote Module](https://github.com/Jopyth/MMM-Remote-Control) and [MMM-Sounds](https://github.com/jc21/MMM-Sounds) (optional) installed and configured with our mirror.
-
+You should have [MMM-Remote Module](https://github.com/Jopyth/MMM-Remote-Control) and [MMM-Sounds](https://github.com/jc21/MMM-Sounds) installed and configured with your mirror to get the best out of this module ;)
 Special thanks therefore goes to Jopyth and jc21 for their amazing work!
 
 ## Installation
@@ -74,7 +73,7 @@ The following properties can be configured:
 		</tr>
 		<tr>
 			<td><code>sound</code></td>
-			<td>Sound that should be played using the <a href="https://github.com/jc21/MMM-Sounds">MMM-Sounds</a> module when pin is triggered</td>
+			<td>Sound that should be played using the <a href="https://github.com/jc21/MMM-Sounds">MMM-Sounds</a> module when pin is triggered (filename)</td>
 		</tr>
 		<tr>
 			<td><code>prettyName</code></td>
