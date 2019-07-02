@@ -64,19 +64,19 @@ The following properties can be configured:
 		</tr>
 		<tr>
 			<td><code>direction</code></td>
-			<td>If it is a input or output pin (values: <code>"in" | "out"</code></td>
+			<td>If it is a input or output pin (values: <code>"in" | "out"</code>)</td>
 		</tr>
 		<tr>
 			<td><code>notification</code></td>
-			<td>Any notification name that should trigger the toggle event. The notifications are registered with the [MMM-Remote](https://github.com/Jopyth/MMM-Remote-Control) module and received by this module.</td>
+			<td>Any notification name that should trigger the toggle event. The notifications are registered with the <a href="https://github.com/Jopyth/MMM-Remote-Control">MMM-Remote-Control</a> module and received by this module.</td>
 		</tr>
 		<tr>
 			<td><code>sound</code></td>
-			<td>Sound that should be played using the [MMM-Sounds](https://github.com/jc21/MMM-Sounds) module when pin is triggered</td>
+			<td>Sound that should be played using the <a href="https://github.com/jc21/MMM-Sounds">MMM-Sounds</a> module when pin is triggered</td>
 		</tr>
 		<tr>
 			<td><code>prettyName</code></td>
-			<td>Name used in the remote view of the [MMM-Remote](https://github.com/Jopyth/MMM-Remote-Control) module</td>
+			<td>Name used in the remote view of the <a href="https://github.com/Jopyth/MMM-Remote-Control">MMM-Remote-Control</a> module</td>
 		</tr>
 	</tbody>
 </table>
