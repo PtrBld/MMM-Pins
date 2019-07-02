@@ -5,6 +5,8 @@ You can specify any number of pins with different trigger messages. All messages
 
 Therefore we need to have [MMM-Remote Module](https://github.com/Jopyth/MMM-Remote-Control) and [MMM-Sounds](https://github.com/jc21/MMM-Sounds) (optional) installed and configured with our mirror.
 
+Special thanks therefore goes to Jopyth and jc21 for their amazing work!
+
 ## Installation
 1. Navigate into your MagicMirror's `modules` folder and execute `git clone https://github.com/ptrbld/MMM-Pins.git`. A new folder will appear navigate into it.
 2. Execute `npm install` to install the node dependencies.
