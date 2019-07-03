@@ -69,7 +69,7 @@ The following properties can be configured:
 		</tr>
 		<tr>
 			<td><code>notification</code></td>
-			<td>Any notification name that should trigger the toggle event. The notifications are registered with the <a href="https://github.com/Jopyth/MMM-Remote-Control">MMM-Remote-Control</a> module and received by this module.</td>
+			<td>Any notification name that should trigger the toggle event. The notifications are additional registered with the <a href="https://github.com/Jopyth/MMM-Remote-Control">MMM-Remote-Control</a> module if present.</td>
 		</tr>
 		<tr>
 			<td><code>sound</code></td>
